@@ -1,0 +1,16 @@
+dt: .1
+t: 0
+tmax: 2000
+g: 9.8
+kappa: 10
+count: 0.000
+n: 0.1
+e: 10
+ntplot: 1 #plot every ntplot times
+nplot: 0
+vertical_boundary: 'dem'
+horozontal_boundary: 'constant_head'
+data_dir: 
+save_plots_here: "./plots/"
+save_gif_here: "./test.gif"
+verbosity: 1

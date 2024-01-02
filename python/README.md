@@ -1,0 +1,13 @@
+Numerical solver implementing the Saint-Venant equations for modeling water flow. This code consists of a class called SAINT_VENANT that performs various operations related to the simulation. Below is a brief overview of some of the key functionalities and methods within this code:  
+  - Initialization (__init__ method): The class initializes various parameters, directories, and variables needed for the simulation.
+  - initialize method: Reads configuration from a YAML file and sets up initial conditions, such as water surface elevation (h), time step (dt), and other variables.
+  - predictor and corrector methods: These methods are part of the finite volume time-stepping scheme. They estimate provisional values for water velocity (u and v) and water depth (h) at the next time step.
+  - artificial_viscosity method: Computes and applies artificial viscosity to the simulation to control numerical instabilities.
+  - solve_for_h_u_v_F_E_and_s method: Calculates various variables related to the Saint-Venant equations, including the fluxes (F and E) and the source term (S).
+  - Boundary Conditions Methods: Enforces boundary conditions, including horizontal and vertical boundaries.
+  - set_synthetic_initial_head and read_initial_head_from_file methods: These methods set initial conditions for the water surface elevation, either synthetically or by reading from files.
+  - get_true_U_values method: Calculates the "true" values of the conserved variables U by averaging values from the predictor and corrector steps.
+  - update method: Advances the simulation by one time step, including predictor, corrector, artificial viscosity, boundary condition enforcement, and variable updates.
+  - Plotting Methods: These methods generate plots of water surface elevation at different time steps and can save these plots as images or create an animated GIF.
+  - Other Utility Methods: The code also includes various utility methods to parse configuration files and track simulation progress.
+  - Main Section: The code block at the end of the script initializes an instance of the SAINT_VENANT class, sets up the simulation, and iteratively advances the simulation in time until a specified condition is met.
