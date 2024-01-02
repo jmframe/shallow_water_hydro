@@ -22,5 +22,6 @@ The St. Venant equations are shallow water equations used to model the flow of w
   - `st_v.py`: This code consists of a class called SAINT_VENANT that performs various operations related to the simulation.
   - `sv_config.yml`: Configuration file needed to run the solver.
 
+#### documentation
 - `docs/`: Contains project documentation.
   - `CEE279_Project2_FrameJonathan_20110608b.pdf`: A simple class writeup, no judgements allowed.
